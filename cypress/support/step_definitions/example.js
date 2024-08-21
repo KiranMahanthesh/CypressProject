@@ -1,18 +1,16 @@
-import { Before, Given, Then, When} from "@badeball/cypress-cucumber-preprocessor";
+import { Before, Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
+//import apiUrls from '../fixtures/apiUrls.json';
 
 Before(() => {
-  // This hook runs before each scenario and visits the login page
   cy.visit("https://rahulshettyacademy.com/locatorspractice/");
 });
 
 Given("I open the homepage", () => {
-  cy.contains('Sign in')
-
+  cy.contains('Sign in');
 });
 
 Then("I should see the Cypress homepage", () => {
-  cy.contains('Rahul Shetty Academy')
-
+  cy.contains('Rahul Shetty Academy');
 });
 
 When('I enter a valid username {string} and password {string}', (username, password) => {

@@ -1,6 +1,7 @@
 Feature: Example feature
 
-Background :   Given I open the homepage
+Background :   
+ Given I open the homepage
 
 Scenario: Visit the Cypress homepage
   Then I should see the Cypress homepage
