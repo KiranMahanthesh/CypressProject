@@ -1,3 +1,4 @@
+@LoginFeature
 Feature: Employee API Testing and Data Handling
 
   Background:

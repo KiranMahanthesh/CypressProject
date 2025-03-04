@@ -1,3 +1,4 @@
+@homepage
 Feature: Example feature
 
 Background :   

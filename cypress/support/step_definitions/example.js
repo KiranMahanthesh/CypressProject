@@ -1,9 +1,10 @@
 import { Before, Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
 //import apiUrls from '../fixtures/apiUrls.json';
+import '../support/hooks/homepageHooks';
 
-Before(() => {
-  cy.visit("https://rahulshettyacademy.com/locatorspractice/");
-});
+// Before({ tags: "@homepage" },() => {
+//  cy.visit(apiUrls.loginPage);
+// });
 
 Given("I open the homepage", () => {
   cy.contains('Sign in');

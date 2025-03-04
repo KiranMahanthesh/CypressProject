@@ -1,14 +1,15 @@
-import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then, Before } from "@badeball/cypress-cucumber-preprocessor";
+import { baseUrl } from '../support/hooks/employeeHooks';
 
-let response;
-let baseUrl;
+// let response;
+// let baseUrl;
 
-before(() => {
-  // Load the baseUrl from the fixture file before any test runs
-  cy.fixture('apiUrls').then((data) => {
-    baseUrl = data.baseUrl;
-  });
-});
+// Before({ tags : "@LoginFeature"},() => {
+//   // Load the baseUrl from the fixture file before any test runs
+//   cy.fixture('apiUrls').then((data) => {
+//     baseUrl = data.baseUrl;
+//   });
+// });
 
 // Given Step for Background
 Given('I am on the employee API', () => {
